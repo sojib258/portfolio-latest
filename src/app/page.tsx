@@ -1,10 +1,9 @@
-import { PageLayout } from "@/components";
-import { Text } from "@chakra-ui/react";
+import { DotAnimation, PageLayout } from "@/components";
 
 const page = () => {
   return (
     <PageLayout>
-      <Text>HE</Text>
+      <DotAnimation />
     </PageLayout>
   );
 };
