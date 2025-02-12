@@ -1,16 +1,18 @@
-import { Flex, Image } from "@chakra-ui/react";
+"use client";
+import Spline from "@splinetool/react-spline";
 
 const SpaceComponent = () => {
   return (
-    <Flex w="full" h="full">
-      <Image
-        w="full"
-        h="full"
-        objectFit={"cover"}
-        alt="space"
-        src="bg/2.jpeg"
-      />
-    </Flex>
+    <div
+      style={{
+        width: "100%",
+        height: "100vh",
+        background: "transparent",
+        zIndex: "-1",
+      }}
+    >
+      <Spline scene="https://prod.spline.design/JoYVCWmbwMowcWIn/scene.splinecode" />
+    </div>
   );
 };
 

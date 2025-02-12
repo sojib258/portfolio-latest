@@ -107,13 +107,17 @@ const ParallaxScroll = () => {
         position="fixed"
         top="0"
         left="0"
-        zIndex={100}
+        zIndex={1000000}
         width="full"
         h="full"
         display={{
           base: scrollY < 6300 ? "none" : "block",
           md: scrollY < 7100 ? "none" : "block",
         }}
+        backgroundImage="url(bg/1.jpg)"
+        bgPos="center"
+        bgSize="cover"
+        bgRepeat={"no-repeat"}
       >
         <SpaceComponent />
       </Box>
