@@ -83,6 +83,8 @@ const ParallaxScroll = () => {
     setIsVisible(scrollY < 7200); // Update visibility based on scroll
   }, [scrollY]); //
 
+  console.log("ScrollY", scrollY);
+
   return (
     <Box ref={containerRef}>
       <Box as={"section"} className={"section-1"}>
@@ -99,18 +101,19 @@ const ParallaxScroll = () => {
       </Box>
 
       <Box
-        // as="section"
-        // className="section-3"
-        opacity={scrollY < 7200 ? 0 : 1}
+        as="section"
+        opacity={{ base: scrollY < 6400 ? 0 : 1, md: scrollY < 7200 ? 0 : 1 }}
         transition={"opacity 1s ease-in-out"}
         position="fixed"
         top="0"
         left="0"
-        bg="red"
         zIndex={100}
         width="full"
-        h="100vh"
-        display={scrollY < 7100 ? "none" : "block"}
+        h="full"
+        display={{
+          base: scrollY < 6300 ? "none" : "block",
+          md: scrollY < 7100 ? "none" : "block",
+        }}
       >
         <SpaceComponent />
       </Box>
