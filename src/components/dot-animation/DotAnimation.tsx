@@ -68,7 +68,7 @@ const DotAnimation = () => {
               duration: 2,
               x: xPosition - 2 * deltaX, // Adjust x position
               y: 750, // Move to the bottom
-              opacity: 0, // Fade out
+              opacity: 1, // Fade out
               ease: "power2.in",
               onComplete: () => dot.remove(), // Remove the dot
             });
@@ -84,16 +84,14 @@ const DotAnimation = () => {
     { scope: containerRef }
   );
   return (
-    <Box className="feature" id="feature__animation" w="full" h="full" bg="red">
-      <Box
-        className="feature__background"
-        ref={containerRef}
-        position="absolute"
-        width="full"
-        height="full"
-        overflow="hidden"
-      ></Box>
-    </Box>
+    <Box
+      className="feature__background"
+      ref={containerRef}
+      position="absolute"
+      width="full"
+      height="full"
+      overflow="hidden"
+    ></Box>
   );
 };
 

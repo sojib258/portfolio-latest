@@ -1,11 +1,12 @@
-import { DotAnimation, PageLayout } from "@/components";
+"use client";
+import { PageLayout, ParallaxScroll } from "@/components";
 
-const page = () => {
+const Page = () => {
   return (
     <PageLayout>
-      <DotAnimation />
+      <ParallaxScroll />
     </PageLayout>
   );
 };
 
-export default page;
+export default Page;

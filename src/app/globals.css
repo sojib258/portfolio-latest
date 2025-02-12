@@ -4,15 +4,6 @@
   box-sizing: border-box;
 }
 
-#featureAnimation {
-  background-color: #000;
-  height: 262px;
-  overflow: hidden;
-  position: relative;
-  width: 800px;
-  margin: auto;
-}
-
 .dot {
   position: absolute;
   background-color: #91e600;
@@ -32,4 +23,77 @@
   text-align: center;
   font-weight: 600;
   background-color: blue;
+}
+
+/* Theese are for tunnel animation */
+.experience {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+}
+
+.scroll__target {
+  position: absolute;
+  height: 1000vh;
+  width: 100px;
+  top: 0;
+  z-index: 0;
+}
+
+.vignette-radial {
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  pointer-events: none;
+}
+
+.vignette-radial:after {
+  pointer-events: none;
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: radial-gradient(circle, transparent 60%, black 150%);
+}
+
+/* Theese are for parallax scrolling */
+section {
+  position: relative;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-2 {
+  background-color: red;
+  /* z-index: 10; */
+}
+
+.section-3 {
+  height: 110vh;
+  /* background-color: red; */
+  z-index: 11;
+  margin-top: 7200px;
+  position: "relative";
 }
