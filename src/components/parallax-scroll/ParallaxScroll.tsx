@@ -110,6 +110,7 @@ const ParallaxScroll = () => {
         zIndex={100}
         width="full"
         h="100vh"
+        display={scrollY < 7100 ? "none" : "block"}
       >
         <SpaceComponent />
       </Box>

@@ -5,7 +5,7 @@ const WindowsBg = () => {
   return (
     <Box
       w="full"
-      h="100vh"
+      h={{ base: "auto", sm: "100vh" }}
       bgImage="url(img/1.jpg)"
       bgSize="cover"
       bgRepeat="no-repeat"
