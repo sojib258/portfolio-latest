@@ -5,8 +5,8 @@ const WindowsBg = () => {
   return (
     <Box
       w="full"
-      h={{ base: "auto", sm: "100vh" }}
-      bgImage="url(img/1.jpg)"
+      h={"100vh"}
+      bgImage={{ base: "url(img/4.jpg)", md: "url(img/1.jpg)" }}
       bgSize="cover"
       bgRepeat="no-repeat"
       aspectRatio="16/9"
