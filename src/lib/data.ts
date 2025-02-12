@@ -73,7 +73,7 @@ export const projectsData = [
   },
   {
     img: "projects/1.webp",
-    url: "https://sojibhasan.vercel.app/softech/index.html",
+    url: "https://sojibhasan-portfolio.vercel.app/softech/",
     title:
       "Software Company Multipage Responsive Website Template (HTML, SASS,)",
   },

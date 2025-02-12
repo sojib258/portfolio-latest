@@ -114,10 +114,6 @@ const ParallaxScroll = () => {
           base: scrollY < 6300 ? "none" : "block",
           md: scrollY < 7100 ? "none" : "block",
         }}
-        backgroundImage="url(bg/1.jpg)"
-        bgPos="center"
-        bgSize="cover"
-        bgRepeat={"no-repeat"}
       >
         <SpaceComponent />
       </Box>
